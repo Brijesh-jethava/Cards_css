@@ -1,0 +1,145 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    /* width : 100vw;
+    height: 100vh; */
+
+    display: flex;
+    justify-content: center;
+}   
+.page
+{
+    width: 100vw;
+    height: 100%; 
+    /* border: 2px solid black;
+    background-color: aliceblue; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 20px;
+     
+}
+.cards
+{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(4,1fr);
+
+    /* for responsive design */
+    grid-template-columns: repeat(auto-fit,minmax(200px,300px));  
+    justify-content: center;
+    gap: 1rem; 
+  
+}
+.header
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card
+
+{
+   width: 300px;
+   height: 400px;
+   border: 1px solid rgba(203, 191, 191, 0.805);
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   
+  
+}
+  
+ .card img
+{
+   width: 299px;
+   height: 200px ;
+   border-top-right-radius: 20px;
+   border-top-left-radius: 20px;
+   /* transition: all 0.3sec linear 0s; */
+   transition-timing-function: linear;
+   transition-delay: 0s;
+   transition-duration: 1s;
+}
+
+.card img:hover
+{
+    transform: scale(1.1);
+   
+}
+.card_desc
+{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+
+}
+.footer
+{
+  
+   display: flex;
+   justify-content: space-between;
+   margin: 10px;
+   /* justify-content: space-between; */
+}
+.leftbox
+{
+   display: flex;
+   flex-direction: row;
+   gap: 5px;
+ 
+}
+.text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+
+}
+.text1 span     
+{
+    color: blue;
+}
+.footer img
+{
+  height: 40px;
+  width: 40px;
+}
+.rightbox
+{
+    text-align: right;
+    background-color: #5254f8;
+    padding: 0.75rem 1rem;
+    border: 1px solid gray;
+    
+    border-radius: 5px;
+}
+.rightbox :hover
+{
+    background-color: #6365f1da;
+    transform: scale(1.1);
+}
+.footer .rightbox
+{
+    display: flex;
+    justify-content: center;
+}
+.card_image
+{
+    overflow: hidden;
+}
